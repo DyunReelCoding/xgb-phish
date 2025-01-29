@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "Phishing URL Detector",
+    "version": "1.0",
+    "description": "Detect phishing websites by sending the URL to the Flask server.",
+    "permissions": ["activeTab", "scripting"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "host_permissions": ["<all_urls>"],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": "icon.png"
+    }
+  }
+  
